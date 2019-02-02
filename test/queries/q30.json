@@ -1,0 +1,16 @@
+{
+    "title": "SELECT invalid key, id  ORDER BY id",
+    "query": {
+        "WHERE": {
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "invalid",
+                "courses_id"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

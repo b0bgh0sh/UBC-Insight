@@ -1,0 +1,26 @@
+{
+    "title": "SELECT dept, id, uuid WHERE uuid = 1295 ORDER BY uuid",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_uuid": "1295"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_uuid"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "cpsc",
+            "courses_id": "310",
+            "courses_uuid": "1295"
+        }
+    ]
+}

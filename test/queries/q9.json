@@ -1,0 +1,140 @@
+{
+    "title": "SELECT dept, title WHERE dept = *bot ORDER BY dept",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "bot*"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "sem in botany"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "adv plnt comm"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "adv plnt comm"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "adv plnt comm"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "adv plnt comm"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "topics plnt bioc"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "topics plnt bioc"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "plant molec lab"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "plant molec lab"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "plant molec lab"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "plant molec lab"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "plant molec lab"
+        },
+        {
+            "courses_dept": "bota",
+            "courses_title": "plant molec lab"
+        }
+    ]
+}

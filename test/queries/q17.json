@@ -1,0 +1,28 @@
+{
+    "title": "SELECT avg, dept, pass, id WHERE uuid = 2018 ORDER BY avg",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_uuid": "2018"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_dept",
+                "courses_pass",
+                "courses_id"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_avg": 55.7,
+            "courses_dept": "psyc",
+            "courses_pass": 7,
+            "courses_id": "320"
+        }
+    ]
+}

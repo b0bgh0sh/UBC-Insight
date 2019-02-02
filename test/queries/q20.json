@@ -1,0 +1,32 @@
+{
+    "title": "SELECT id, avg WHERE avg !< 90 && avg !> 2 ORDER BY avg",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "NOT": {
+                        "LT": {
+                            "courses_avg": 90
+                        }
+                    }
+                },
+                {
+                    "NOT": {
+                        "GT": {
+                            "courses_avg": 2
+                        }
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

@@ -1,0 +1,105 @@
+{
+    "title": "SELECT dept, id, uuid WHERE id = *82* && id = *82* && dept = *si* ORDER BY id",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_id": "*82*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "*82*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "*si*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "asia",
+            "courses_id": "382",
+            "courses_uuid": "40221"
+        },
+        {
+            "courses_dept": "asia",
+            "courses_id": "382",
+            "courses_uuid": "26018"
+        },
+        {
+            "courses_dept": "asia",
+            "courses_id": "382",
+            "courses_uuid": "32210"
+        },
+        {
+            "courses_dept": "asia",
+            "courses_id": "382",
+            "courses_uuid": "32211"
+        },
+        {
+            "courses_dept": "asia",
+            "courses_id": "382",
+            "courses_uuid": "39483"
+        },
+        {
+            "courses_dept": "asia",
+            "courses_id": "382",
+            "courses_uuid": "39484"
+        },
+        {
+            "courses_dept": "asia",
+            "courses_id": "382",
+            "courses_uuid": "40220"
+        },
+        {
+            "courses_dept": "asia",
+            "courses_id": "382",
+            "courses_uuid": "26019"
+        },
+        {
+            "courses_dept": "asia",
+            "courses_id": "382",
+            "courses_uuid": "44506"
+        },
+        {
+            "courses_dept": "asia",
+            "courses_id": "382",
+            "courses_uuid": "44507"
+        },
+        {
+            "courses_dept": "asia",
+            "courses_id": "382",
+            "courses_uuid": "74629"
+        },
+        {
+            "courses_dept": "asia",
+            "courses_id": "382",
+            "courses_uuid": "74630"
+        },
+        {
+            "courses_dept": "asia",
+            "courses_id": "382",
+            "courses_uuid": "94627"
+        },
+        {
+            "courses_dept": "asia",
+            "courses_id": "382",
+            "courses_uuid": "94628"
+        }
+    ]
+}

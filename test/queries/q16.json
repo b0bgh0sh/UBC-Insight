@@ -1,0 +1,40 @@
+{
+    "title": "SELECT avg, dept, pass, id WHERE avg < 1 ORDER BY avg",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_avg": 1
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_dept",
+                "courses_pass",
+                "courses_id"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_avg": 0,
+            "courses_dept": "frst",
+            "courses_pass": 0,
+            "courses_id": "202"
+        },
+        {
+            "courses_avg": 0,
+            "courses_dept": "lfs",
+            "courses_pass": 0,
+            "courses_id": "100"
+        },
+        {
+            "courses_avg": 0,
+            "courses_dept": "lfs",
+            "courses_pass": 0,
+            "courses_id": "100"
+        }
+    ]
+}

@@ -1,0 +1,134 @@
+{
+    "title": "SELECT dept, avg WHERE avg > 98",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 98
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "courses_year",
+                "overallAvg"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title",
+                "courses_year"
+            ],
+            "APPLY": [
+                {
+                    "overallAvg": {
+                        "AVG": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_title": "career planning",
+            "courses_year": 2012,
+            "overallAvg": 99.19
+        },
+        {
+            "courses_title": "multimedia sys",
+            "courses_year": 2009,
+            "overallAvg": 98.75
+        },
+        {
+            "courses_title": "multimedia sys",
+            "courses_year": 1900,
+            "overallAvg": 98.75
+        },
+        {
+            "courses_title": "assess lrn diffi",
+            "courses_year": 2009,
+            "overallAvg": 98.39
+        },
+        {
+            "courses_title": "assess lrn diffi",
+            "courses_year": 1900,
+            "overallAvg": 98.36
+        },
+        {
+            "courses_title": "educ stds autism",
+            "courses_year": 2014,
+            "overallAvg": 98.8
+        },
+        {
+            "courses_title": "educ stds autism",
+            "courses_year": 2012,
+            "overallAvg": 98.67
+        },
+        {
+            "courses_title": "educ stds autism",
+            "courses_year": 1900,
+            "overallAvg": 98.67
+        },
+        {
+            "courses_title": "dev el sk df&hrd",
+            "courses_year": 2011,
+            "overallAvg": 98.45
+        },
+        {
+            "courses_title": "dev el sk df&hrd",
+            "courses_year": 1900,
+            "overallAvg": 98.45
+        },
+        {
+            "courses_title": "algb topology i",
+            "courses_year": 2009,
+            "overallAvg": 99.78
+        },
+        {
+            "courses_title": "algb topology i",
+            "courses_year": 1900,
+            "overallAvg": 99.78
+        },
+        {
+            "courses_title": "cl pro prim care",
+            "courses_year": 2011,
+            "overallAvg": 98.71
+        },
+        {
+            "courses_title": "cl pro prim care",
+            "courses_year": 1900,
+            "overallAvg": 98.46
+        },
+        {
+            "courses_title": "cl pro prim care",
+            "courses_year": 2015,
+            "overallAvg": 98.21
+        },
+        {
+            "courses_title": "fam nrs pract",
+            "courses_year": 2013,
+            "overallAvg": 98.5
+        },
+        {
+            "courses_title": "fam nrs pract",
+            "courses_year": 1900,
+            "overallAvg": 98.54
+        },
+        {
+            "courses_title": "fam nrs pract",
+            "courses_year": 2010,
+            "overallAvg": 98.58
+        },
+        {
+            "courses_title": "work int health",
+            "courses_year": 2015,
+            "overallAvg": 98.98
+        },
+        {
+            "courses_title": "work int health",
+            "courses_year": 1900,
+            "overallAvg": 98.98
+        }
+    ]
+}
+

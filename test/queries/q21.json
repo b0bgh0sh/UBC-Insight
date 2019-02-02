@@ -1,0 +1,80 @@
+{
+    "title": "SELECT dept, title, uuid WHERE title = && id = *9 ORDER BY title",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_title": ""
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "*9"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_title"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "stat",
+            "courses_title": "",
+            "courses_uuid": "19908"
+        },
+        {
+            "courses_dept": "stat",
+            "courses_title": "",
+            "courses_uuid": "19909"
+        },
+        {
+            "courses_dept": "stat",
+            "courses_title": "",
+            "courses_uuid": "36737"
+        },
+        {
+            "courses_dept": "stat",
+            "courses_title": "",
+            "courses_uuid": "43164"
+        },
+        {
+            "courses_dept": "stat",
+            "courses_title": "",
+            "courses_uuid": "43165"
+        },
+        {
+            "courses_dept": "stat",
+            "courses_title": "",
+            "courses_uuid": "68705"
+        },
+        {
+            "courses_dept": "stat",
+            "courses_title": "",
+            "courses_uuid": "68706"
+        },
+        {
+            "courses_dept": "stat",
+            "courses_title": "",
+            "courses_uuid": "73802"
+        },
+        {
+            "courses_dept": "stat",
+            "courses_title": "",
+            "courses_uuid": "97795"
+        },
+        {
+            "courses_dept": "stat",
+            "courses_title": "",
+            "courses_uuid": "97796"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "title": "SELECT audit WHERE dept = B* && dept = b* ORDER BY audit",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "B*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "b*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_audit"
+            ],
+            "ORDER": "courses_audit"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

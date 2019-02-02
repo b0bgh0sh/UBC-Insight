@@ -1,0 +1,116 @@
+{
+    "title": "SELECT dept, instructor, uuid WHERE instructor = knorr, edwin max ORDER BY dept",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": "knorr, edwin max"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_instructor",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "46725"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "46679"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "49877"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "61108"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "83416"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "46691"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "1322"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "1323"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "46724"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "90526"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "49924"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "61152"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "72387"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "72388"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "83460"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "90569"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "46756"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "61186"
+        },
+        {
+            "courses_dept": "cpsc",
+            "courses_instructor": "knorr, edwin max",
+            "courses_uuid": "72422"
+        }
+    ]
+}

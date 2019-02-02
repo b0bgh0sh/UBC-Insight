@@ -1,0 +1,19 @@
+{
+    "title": "Room Query Simple",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "roomss_seats": 220
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "roomss_address",
+                "roomss_name"
+            ],
+            "ORDER": "roomss_address"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented"
+}

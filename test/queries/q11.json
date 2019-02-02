@@ -1,0 +1,43 @@
+{
+    "title": "SELECT audit, dept, id, instructor WHERE audit < 1 && instructor = *fernanda ORDER BY dept",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "LT": {
+                        "courses_audit": 1
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_instructor": "*fernanda"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_audit",
+                "courses_dept",
+                "courses_id",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_audit": 0,
+            "courses_dept": "arch",
+            "courses_id": "520",
+            "courses_instructor": "hannah-suarez, fernanda"
+        },
+        {
+            "courses_audit": 0,
+            "courses_dept": "arch",
+            "courses_id": "540",
+            "courses_instructor": "hannah-suarez, fernanda"
+        }
+    ]
+}

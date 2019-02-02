@@ -1,0 +1,52 @@
+{
+    "title": "SELECT dept, title WHERE !(avg !< 10) ORDER BY dept",
+    "query": {
+        "WHERE": {
+            "NOT": {
+                "NOT": {
+                    "LT": {
+                        "courses_avg": 10
+                    }
+                }
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "busi",
+            "courses_title": "found re apprai"
+        },
+        {
+            "courses_dept": "busi",
+            "courses_title": "found re apprai"
+        },
+        {
+            "courses_dept": "fopr",
+            "courses_title": "sustnbt&frst ops"
+        },
+        {
+            "courses_dept": "frst",
+            "courses_title": "forest ecology"
+        },
+        {
+            "courses_dept": "lfs",
+            "courses_title": "in land food com"
+        },
+        {
+            "courses_dept": "lfs",
+            "courses_title": "in land food com"
+        },
+        {
+            "courses_dept": "wood",
+            "courses_title": "prpty,ident&uses"
+        }
+    ]
+}

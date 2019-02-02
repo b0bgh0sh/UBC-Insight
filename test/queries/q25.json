@@ -1,0 +1,29 @@
+{
+    "title": "SELECT dept, id, uuid WHERE pass < 1 || dept == 0 ORDER BY dept",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "LT": {
+                        "courses_pass": 1
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_dept": 0
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

@@ -1,0 +1,55 @@
+{
+    "title": "SELECT dept, fail, pass WHERE pass < 1 && fail == 1 ORDER BY pass",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "LT": {
+                        "courses_pass": 1
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_fail": 1
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_fail",
+                "courses_pass"
+            ],
+            "ORDER": "courses_pass"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "busi",
+            "courses_fail": 1,
+            "courses_pass": 0
+        },
+        {
+            "courses_dept": "busi",
+            "courses_fail": 1,
+            "courses_pass": 0
+        },
+        {
+            "courses_dept": "frst",
+            "courses_fail": 1,
+            "courses_pass": 0
+        },
+        {
+            "courses_dept": "lfs",
+            "courses_fail": 1,
+            "courses_pass": 0
+        },
+        {
+            "courses_dept": "lfs",
+            "courses_fail": 1,
+            "courses_pass": 0
+        }
+    ]
+}

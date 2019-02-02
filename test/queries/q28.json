@@ -1,0 +1,43 @@
+{
+    "title": "SELECT dept, id WHERE dept == 1 || id == 3 || instructor == 0 || title == 1 || uuid == 3 ORDER BY id",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "EQ": {
+                        "courses_dept": 1
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_id": 3
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_instructor": 0
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_title": 1
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_uuid": 3
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

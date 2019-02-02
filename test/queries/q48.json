@@ -1,0 +1,19 @@
+{
+    "title": "Invalid GT 2",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_dept": 47
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

@@ -1,0 +1,28 @@
+{
+    "title": "SELECT dept, instructor WHERE audit < 0 || instructor = cpsc 310, cpsc 310 ORDER BY dept",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "LT": {
+                        "courses_audit": 0
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_instructor": "cpsc 310, cpsc 310"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

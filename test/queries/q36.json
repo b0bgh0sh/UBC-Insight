@@ -1,0 +1,33 @@
+{
+    "title": "SELECT id WHERE > && < && == && =  ORDER BY id",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                    }
+                },
+                {
+                    "LT": {
+                    }
+                },
+                {
+                    "EQ": {
+                    }
+                },
+                {
+                    "IS": {
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

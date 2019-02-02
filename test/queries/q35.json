@@ -1,0 +1,29 @@
+{
+    "title": "SELECT id WHERE || && ! ORDER BY id",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "OR": [
+                        {
+                        },
+                        {
+                        }
+                    ]
+                },
+                {
+                    "NOT": {
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

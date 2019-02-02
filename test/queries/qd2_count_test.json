@@ -1,0 +1,85 @@
+{
+    "title": "Count Example",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 98
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "overallAvg",
+                "count"
+            ],
+            "ORDER": "courses_title"
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_title"
+            ],
+            "APPLY": [
+                {
+                    "overallAvg": {
+                        "AVG": "courses_avg"
+                    }
+                },
+                {
+                    "count": {
+                        "COUNT": "courses_fail"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_title": "algb topology i",
+            "overallAvg": 99.78,
+            "count": 1
+        },
+        {
+            "courses_title": "assess lrn diffi",
+            "overallAvg": 98.38,
+            "count": 1
+        },
+        {
+            "courses_title": "career planning",
+            "overallAvg": 99.19,
+            "count": 1
+        },
+        {
+            "courses_title": "cl pro prim care",
+            "overallAvg": 98.46,
+            "count": 1
+        },
+        {
+            "courses_title": "dev el sk df&hrd",
+            "overallAvg": 98.45,
+            "count": 1
+        },
+        {
+            "courses_title": "educ stds autism",
+            "overallAvg": 98.7,
+            "count": 1
+        },
+        {
+            "courses_title": "fam nrs pract",
+            "overallAvg": 98.54,
+            "count": 1
+        },
+        {
+            "courses_title": "multimedia sys",
+            "overallAvg": 98.75,
+            "count": 1
+        },
+        {
+            "courses_title": "work int health",
+            "overallAvg": 98.98,
+            "count": 1
+        }
+    ]
+}
+
+

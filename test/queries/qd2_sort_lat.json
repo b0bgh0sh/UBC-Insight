@@ -1,0 +1,68 @@
+{
+    "title": "Sort Lat",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "rooms_furniture": "*Tables*"
+                    }
+                },
+                {
+                    "GT": {
+                        "rooms_seats": 300
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "rooms_lat",
+                "rooms_lon",
+                "maxLat"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "maxLat"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_shortname",
+                "rooms_lat",
+                "rooms_lon"
+            ],
+            "APPLY": [
+                {
+                    "maxLat": {
+                        "MAX": "rooms_lat"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "rooms_shortname": "HEBB",
+            "rooms_lat": 49.2661,
+            "rooms_lon": -123.25165,
+            "maxLat": 49.2661
+        },
+        {
+            "rooms_shortname": "LSC",
+            "rooms_lat": 49.26236,
+            "rooms_lon": -123.24494,
+            "maxLat": 49.26236
+        },
+        {
+            "rooms_shortname": "OSBO",
+            "rooms_lat": 49.26047,
+            "rooms_lon": -123.24467,
+            "maxLat": 49.26047
+        }
+    ]
+}

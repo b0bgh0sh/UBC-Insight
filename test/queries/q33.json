@@ -1,0 +1,34 @@
+{
+    "title": "SELECT dept, id, audit, uuid WHERE uuid != 16427 || id != 330 ORDER BY dept",
+    "query": {
+        "WHERE": {
+            "NOT": {
+                "OR": [
+                    {
+                        "NOT": {
+                            "IS": {
+                                "courses_uuid": "16427"
+                            }
+                        }
+                    },
+                    {
+                        "IS": {
+                            "courses_id": "330"
+                        }
+                    }
+                ]
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_audit",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

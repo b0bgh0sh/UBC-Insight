@@ -1,0 +1,28 @@
+{
+    "title": "SELECT dept, instructor WHERE avg == 98 ORDER BY instructor",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_avg": 98
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_instructor"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "crwr",
+            "courses_instructor": "grady, albert wayne"
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_instructor": "maillard, keith"
+        }
+    ]
+}

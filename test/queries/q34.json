@@ -1,0 +1,21 @@
+{
+    "title": "SELECT dept, id WHERE < avg > 100 ORDER BY id",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "GT": {
+                    "courses_avg": 100
+                }
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

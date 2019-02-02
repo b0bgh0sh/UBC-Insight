@@ -1,0 +1,38 @@
+{
+    "title": "SELECT dept, id WHERE pass = || audit = || average = || fail = ORDER BY id",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "IS": {
+                        "courses_pass": ""
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_audit": ""
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_avg": ""
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_fail": ""
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

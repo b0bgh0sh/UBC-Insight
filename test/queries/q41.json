@@ -1,0 +1,20 @@
+{
+    "title": "Wildcard test middle",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_uuid": "1*5"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_uuid"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

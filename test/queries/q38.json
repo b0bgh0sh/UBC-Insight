@@ -1,0 +1,36 @@
+{
+    "title": "SELECT dept, dept, dept, uuid WHERE avg == 4 || avg == 4 ORDER BY dept",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "EQ": {
+                        "courses_avg": 4
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 4
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_dept",
+                "courses_dept"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "busi"
+        },
+        {
+            "courses_dept": "busi"
+        }
+    ]
+}

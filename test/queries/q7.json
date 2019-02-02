@@ -1,0 +1,46 @@
+{
+    "title": "SELECT dept, fail, id WHERE fail > 250 ORDER BY fail",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_fail": 250
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_fail",
+                "courses_id"
+            ],
+            "ORDER": "courses_fail"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "chem",
+            "courses_fail": 251,
+            "courses_id": "121"
+        },
+        {
+            "courses_dept": "chem",
+            "courses_fail": 260,
+            "courses_id": "121"
+        },
+        {
+            "courses_dept": "chem",
+            "courses_fail": 264,
+            "courses_id": "121"
+        },
+        {
+            "courses_dept": "chem",
+            "courses_fail": 266,
+            "courses_id": "121"
+        },
+        {
+            "courses_dept": "chem",
+            "courses_fail": 287,
+            "courses_id": "121"
+        }
+    ]
+}

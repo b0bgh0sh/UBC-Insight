@@ -1,0 +1,20 @@
+{
+    "title": "WHERE wrong ID",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "course_uuid": "15*"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_uuid"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

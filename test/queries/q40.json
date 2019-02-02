@@ -1,0 +1,22 @@
+{
+    "title": "SELECT dept WHERE id 100 || avg 100",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "courses_id": "100"
+                },
+                {
+                    "courses_avg": 100
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}
